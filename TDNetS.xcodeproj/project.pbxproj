@@ -10,6 +10,13 @@
 		31CC29001E9269FE00D01432 /* TDNetS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CC28F61E9269FE00D01432 /* TDNetS.framework */; };
 		31CC29051E9269FE00D01432 /* TDNetSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CC29041E9269FE00D01432 /* TDNetSTests.swift */; };
 		31CC29071E9269FE00D01432 /* TDNetS.h in Headers */ = {isa = PBXBuildFile; fileRef = 31CC28F91E9269FE00D01432 /* TDNetS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31CC29111E9281CE00D01432 /* TDNetS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CC29101E9281CE00D01432 /* TDNetS.swift */; };
+		31CC29141E929B5600D01432 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CC29131E929B5600D01432 /* URL.swift */; };
+		31CC29171E929D4D00D01432 /* TDSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CC29161E929D4D00D01432 /* TDSession.swift */; };
+		31CC29191E929F8800D01432 /* TDSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CC29181E929F8800D01432 /* TDSessionDelegate.swift */; };
+		31CC291B1E92CD2C00D01432 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CC291A1E92CD2C00D01432 /* URLSession.swift */; };
+		31CC291D1E92E01300D01432 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CC291C1E92E01300D01432 /* Data.swift */; };
+		31CC29201E94335D00D01432 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CC291F1E94335D00D01432 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		31CC28FF1E9269FE00D01432 /* TDNetSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDNetSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31CC29041E9269FE00D01432 /* TDNetSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDNetSTests.swift; sourceTree = "<group>"; };
 		31CC29061E9269FE00D01432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31CC29101E9281CE00D01432 /* TDNetS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDNetS.swift; sourceTree = "<group>"; };
+		31CC29131E929B5600D01432 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		31CC29161E929D4D00D01432 /* TDSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDSession.swift; sourceTree = "<group>"; };
+		31CC29181E929F8800D01432 /* TDSessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDSessionDelegate.swift; sourceTree = "<group>"; };
+		31CC291A1E92CD2C00D01432 /* URLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		31CC291C1E92E01300D01432 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		31CC291F1E94335D00D01432 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +85,12 @@
 		31CC28F81E9269FE00D01432 /* TDNetS */ = {
 			isa = PBXGroup;
 			children = (
+				31CC291E1E94333F00D01432 /* util */,
+				31CC29151E929D3700D01432 /* net */,
+				31CC29121E929B0100D01432 /* additions */,
 				31CC28F91E9269FE00D01432 /* TDNetS.h */,
 				31CC28FA1E9269FE00D01432 /* Info.plist */,
+				31CC29101E9281CE00D01432 /* TDNetS.swift */,
 			);
 			path = TDNetS;
 			sourceTree = "<group>";
@@ -84,6 +102,33 @@
 				31CC29061E9269FE00D01432 /* Info.plist */,
 			);
 			path = TDNetSTests;
+			sourceTree = "<group>";
+		};
+		31CC29121E929B0100D01432 /* additions */ = {
+			isa = PBXGroup;
+			children = (
+				31CC29131E929B5600D01432 /* URL.swift */,
+				31CC291A1E92CD2C00D01432 /* URLSession.swift */,
+				31CC291C1E92E01300D01432 /* Data.swift */,
+			);
+			name = additions;
+			sourceTree = "<group>";
+		};
+		31CC29151E929D3700D01432 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				31CC29161E929D4D00D01432 /* TDSession.swift */,
+				31CC29181E929F8800D01432 /* TDSessionDelegate.swift */,
+			);
+			name = net;
+			sourceTree = "<group>";
+		};
+		31CC291E1E94333F00D01432 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				31CC291F1E94335D00D01432 /* Reachability.swift */,
+			);
+			name = util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +194,7 @@
 					31CC28F51E9269FE00D01432 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = XUR4D72FM6;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					31CC28FE1E9269FE00D01432 = {
@@ -198,6 +244,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31CC29201E94335D00D01432 /* Reachability.swift in Sources */,
+				31CC29111E9281CE00D01432 /* TDNetS.swift in Sources */,
+				31CC291D1E92E01300D01432 /* Data.swift in Sources */,
+				31CC29191E929F8800D01432 /* TDSessionDelegate.swift in Sources */,
+				31CC291B1E92CD2C00D01432 /* URLSession.swift in Sources */,
+				31CC29141E929B5600D01432 /* URL.swift in Sources */,
+				31CC29171E929D4D00D01432 /* TDSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +377,7 @@
 		31CC290B1E9269FE00D01432 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = XUR4D72FM6;
@@ -336,6 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.trainingdragon.TDNetS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +398,7 @@
 		31CC290C1E9269FE00D01432 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = XUR4D72FM6;
@@ -362,6 +418,7 @@
 		31CC290E1E9269FE00D01432 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = XUR4D72FM6;
 				INFOPLIST_FILE = TDNetSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +431,7 @@
 		31CC290F1E9269FE00D01432 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = XUR4D72FM6;
 				INFOPLIST_FILE = TDNetSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
