@@ -15,6 +15,7 @@ class TDSession : URLSession {
         let config = URLSessionConfiguration.background(withIdentifier: "trainingdragon")
         let delegate = TDSessionDelegate()
         session = super.init(configuration: config, delegate: delegate, delegateQueue: OperationQueue.main)
+        
         return session
     }
     
